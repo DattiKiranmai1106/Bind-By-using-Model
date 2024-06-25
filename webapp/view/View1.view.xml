@@ -1,0 +1,45 @@
+<mvc:View controllerName="com.sap.kt.bind.bindbyusemodel.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content >
+            <Toolbar id="TB1" class="TBClass1">
+			        <Title text="Expense Table" class="tit1" />
+                    <!-- <Button text="Go To View2" press="onPressNavView"/> -->
+                </Toolbar>
+                <Table   alternateRowColors="false" items="{dataModel>/expenseData}"  >
+		            <columns >
+			            <Column  >
+			            	<Text text="Expense ID" />
+			            </Column>
+			            <Column>
+			            	<Text text="Expense Name" />
+			            </Column>
+			            <Column>
+			            	<Text text="Expense Amount(INR)" />
+			            </Column>
+			            <!-- <Column >
+			            	<Text text="Expense Amount(USD)" />
+			            </Column>
+			            <Column>
+			            	<Text text="Expense Amount(EVR)" />
+			            </Column>
+			            <Column>
+			            	<Text text="Status" />
+			            </Column> -->
+		            </columns>
+                    <items>
+                        <ColumnListItem id="colId" type="Navigation" press="onPressNavView"   >
+                            <cells >
+                               <Text id="expenseID" text="{dataModel>expenseId}" />
+                               <Text id="expenseName" text="{dataModel>expenseName}" />
+                               <Text id="expenseAmount" text="{dataModel>expenseAmount}" />
+                               
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                  </Table> 
+        </content>
+    </Page>
+</mvc:View>
+                  

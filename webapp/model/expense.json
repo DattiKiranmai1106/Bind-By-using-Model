@@ -1,0 +1,15 @@
+{
+    "expenseData":[{
+        "expenseId":"1",
+        "expenseName":"Car",
+        "expenseAmount":"1200"
+    },{
+        "expenseId":"2",
+        "expenseName":"Train",
+        "expenseAmount":"1800"
+    },{
+        "expenseId":"1",
+        "expenseName":"Bus",
+        "expenseAmount":"1500"
+    }]
+}
